@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M' Martin · Bar-Restaurante Vasco</title>
+<meta name="description" content="M' Martin — Bar-restaurante en el barrio del Antiguo, Donostia-San Sebastián. Cocina vasca de producto, pintxos y carta de temporada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#inicio" class="navbar__brand">M' Martin</a>
+    <nav class="navbar__nav" id="navMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#carta">Carta</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero__image" style="background-image: url('images/hero.jpg');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <span class="hero__eyebrow">Bar · Restaurante vasco</span>
+    <h1 class="hero__title">M' Martin</h1>
+    <p class="hero__subtitle">Cocina vasca vivida desde el respeto al producto y la tradición</p>
+    <a href="#carta" class="hero__cta">Ver la carta</a>
+  </div>
+  <a href="#carta" class="hero__scroll" aria-label="Bajar a la carta">
+    <span></span>
+  </a>
+</section>
+
+<section class="menu" id="carta">
+  <div class="menu__header reveal">
+    <span class="section-eyebrow">Barrio del Antiguo</span>
+    <h2 class="section-title">La Carta</h2>
+    <p class="section-lead">Pintxos y platos de mercado elaborados con producto de temporada, pensados para compartir en la barra o en mesa.</p>
+  </div>
+
+  <div class="menu__tabs reveal" id="menuTabs">
+    <button class="menu__tab is-active" data-target="entrantes">Entrantes</button>
+    <button class="menu__tab" data-target="ensaladas">Ensaladas</button>
+    <button class="menu__tab" data-target="pescados">Pescados</button>
+    <button class="menu__tab" data-target="carnes">Carnes</button>
+    <button class="menu__tab" data-target="postres">Postres</button>
+  </div>
+
+  <div class="menu__panels">
+
+    <div class="menu__panel is-active" id="entrantes">
+      <ul class="dish-list">
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Morcilla de Burgos</span><span class="dish__leader"></span><span class="dish__price">5,50 €</span></div>
+          <p class="dish__desc">Pintxo clásico de la casa, morcilla de Burgos a la plancha.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Canelón de porcini</span><span class="dish__leader"></span><span class="dish__price">6,00 €</span></div>
+          <p class="dish__desc">Champiñones porcini en canelón crujiente, receta de temporada.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Tortilla de patata</span><span class="dish__leader"></span><span class="dish__price">4,50 €</span></div>
+          <p class="dish__desc">Tortilla jugosa elaborada al momento, receta tradicional de la casa.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Tabla de quesos</span><span class="dish__leader"></span><span class="dish__price">11,00 €</span></div>
+          <p class="dish__desc">Selección de quesos vascos para compartir.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" id="ensaladas">
+      <ul class="dish-list">
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Ensalada Olivier</span><span class="dish__leader"></span><span class="dish__price">9,50 €</span></div>
+          <p class="dish__desc">Ensaladilla rusa con langostinos, pimiento asado y aceitunas.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Ensalada de temporada</span><span class="dish__leader"></span><span class="dish__price">8,50 €</span></div>
+          <p class="dish__desc">Verduras de mercado con vinagreta de la casa.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" id="pescados">
+      <ul class="dish-list">
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Bacalao con almejas</span><span class="dish__leader"></span><span class="dish__price">19,50 €</span></div>
+          <p class="dish__desc">Lomo de bacalao en salsa verde con almejas.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Rodaballo</span><span class="dish__leader"></span><span class="dish__price">23,00 €</span></div>
+          <p class="dish__desc">Rodaballo de la costa cocinado al punto.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Langostinos a la plancha</span><span class="dish__leader"></span><span class="dish__price">17,00 €</span></div>
+          <p class="dish__desc">Langostinos en brocheta con salsa de la casa.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Pulpo braseado</span><span class="dish__leader"></span><span class="dish__price">18,00 €</span></div>
+          <p class="dish__desc">Pulpo cocinado a la brasa, uno de los platos más pedidos de la casa.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Marmitako</span><span class="dish__leader"></span><span class="dish__price">16,50 €</span></div>
+          <p class="dish__desc">Guiso tradicional vasco de bonito y patata.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" id="carnes">
+      <ul class="dish-list">
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Filete de lomo</span><span class="dish__leader"></span><span class="dish__price">18,50 €</span></div>
+          <p class="dish__desc">Filete de lomo a la brasa con guarnición del día.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Cerdo negro a la brasa</span><span class="dish__leader"></span><span class="dish__price">19,00 €</span></div>
+          <p class="dish__desc">Costilla de cerdo negro asada a la brasa, con patatas fritas.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Paletilla ibérica</span><span class="dish__leader"></span><span class="dish__price">20,00 €</span></div>
+          <p class="dish__desc">Paletilla de cerdo ibérico asada lentamente.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" id="postres">
+      <ul class="dish-list">
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Tarta de queso</span><span class="dish__leader"></span><span class="dish__price">5,50 €</span></div>
+          <p class="dish__desc">Tarta de queso cremosa, receta casera de la casa.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Tarta de manzana</span><span class="dish__leader"></span><span class="dish__price">5,50 €</span></div>
+          <p class="dish__desc">Uno de los postres clásicos de M' Martin.</p>
+        </li>
+        <li class="dish">
+          <div class="dish__head"><span class="dish__name">Bizcocho de frutas</span><span class="dish__leader"></span><span class="dish__price">5,00 €</span></div>
+          <p class="dish__desc">Bizcocho casero con fruta de temporada.</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer" id="contacto">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__logo">M' Martin</span>
+      <p>Bar-restaurante vasco en el barrio del Antiguo</p>
+    </div>
+    <div class="footer__info">
+      <p><i class="fa-solid fa-location-dot"></i> Gasteiz Kalea, 6 · 20018 Donostia / San Sebastián</p>
+      <p><i class="fa-solid fa-phone"></i> <a href="tel:+34943381255">+34 943 38 12 55</a></p>
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:oficina@restaurantemartin.es">oficina@restaurantemartin.es</a></p>
+      <p><i class="fa-solid fa-clock"></i> Lun–Mar y Jue–Sáb · 10:00–23:30</p>
+      <p><i class="fa-solid fa-clock"></i> Dom · 10:00–15:30 &nbsp;·&nbsp; Mié cerrado</p>
+    </div>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/restaurantmartin/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g187457-d28091897-Reviews-Restaurante_M_Martin-Donostia_San_Sebastian_Province_of_Guipuzcoa_Basque_Country.html" target="_blank" rel="noopener" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2026 M' Martin. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
